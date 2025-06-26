@@ -13,31 +13,28 @@ import Footer from '../components/footer'
 export default function Home() {
   return (
     <>
-    <Head>
-        <title>Металопластикові вікна, двері, балкони | [Назва компанії]</title>
-        <meta
-          name="description"
-          content="Купуйте вікна, двері, балкони з установкою. Швидкий монтаж. Гарантія. Безкоштовна консультація."
-        />
-        <meta
-          name="keywords"
-          content="вікна, металопластикові вікна, двері, балкони, розсувні системи, вікна Дніпро, вікна з установкою, замовити вікна"
-        />
+ <Head>
+  <title>Металопластикові вікна, двері, балкони | [Назва компанії]</title>
+  <meta
+    name="description"
+    content="Купуйте вікна, двері, балкони з установкою. Швидкий монтаж. Гарантія. Безкоштовна консультація."
+  />
+  <meta
+    name="keywords"
+    content="вікна, металопластикові вікна, двері, балкони, розсувні системи, вікна Дніпро, вікна з установкою, замовити вікна"
+  />
 
-        {/* Open Graph */}
-        <meta property="og:title" content="Металопластикові вікна, двері, балкони | [Назва компанії]" />
-        <meta property="og:description" content="Якісні вікна та двері з монтажем під ключ. Працюємо по Дніпру та області. Гарантія. Знижки на балкони та розсувні системи." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://твої-сайт.ua" />
-        <meta property="og:image" content="https://твої-сайт.ua/og-image.jpg" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Вікна під ключ" />
-      </Head>
-      <Head>
-        <title>Продаж вікон, дверей, балконів</title>
-        <meta name="description" content="Замовляйте металопластикові вікна, двері, балконні системи та розсувні конструкції з установкою під ключ." />
-      </Head>
+  {/* Open Graph */}
+  <meta property="og:title" content="Металопластикові вікна, двері, балкони | [Назва компанії]" />
+  <meta property="og:description" content="Якісні вікна та двері з монтажем під ключ. Працюємо по Дніпру та області. Гарантія. Знижки на балкони та розсувні системи." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://твої-сайт.ua" />
+  <meta property="og:image" content="https://твої-сайт.ua/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Вікна під ключ" />
+</Head>
+
       <Header />
       <Banner />
       <main className="bg-gray-100">

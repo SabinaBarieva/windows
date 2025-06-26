@@ -44,10 +44,10 @@ export default function Home() {
       <SlidingSystemsSection id="#sliding-systems"/>
       <AluminProf id="alumin" />
 </main>
-<div className="fixed bottom-4 left-4 z-50 md:hidden">
+<div className="fixed bottom-4 right-4 z-50 block md:hidden">
   <a
     href="tel:+380970000000"
-    className="bg-blue-600 text-white rounded-full p-3 shadow-lg flex items-center justify-center"
+    className="bg-green-600 hover:bg-green-700 text-white rounded-full p-3 shadow-lg flex items-center justify-center transition-colors duration-200"
     aria-label="Подзвонити"
   >
     <svg
@@ -66,6 +66,7 @@ export default function Home() {
     </svg>
   </a>
 </div>
+
 
 <Footer />
     </>

@@ -18,7 +18,7 @@ export default function GoogleMap() {
 
   useEffect(() => {
     const script = document.createElement('script')
-    script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyCOnxo5DL9x_SH94y3JF8Zh_zqp01-uCYY&callback=initMap`
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&callback=initMap`
     script.async = true
     document.body.appendChild(script)
 

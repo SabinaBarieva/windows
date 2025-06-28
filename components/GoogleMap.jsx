@@ -15,7 +15,7 @@ const locations = [
 
 export default function GoogleMap() {
   const mapRef = useRef(null)
-
+console.log("API KEY:", process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY)
   useEffect(() => {
     const script = document.createElement('script')
     script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&callback=initMap`

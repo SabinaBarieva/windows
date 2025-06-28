@@ -1,39 +1,48 @@
 import Head from 'next/head'
 import Header from '../components/Header'
-import ContactForm from '../components/ContactForm'
 import Button from '../components/Button'
 import Banner from '../components/Banner'
 import BalconySection from '../components/Balcon'
 import Doors from '../components/Doors'
 import SlidingSystemsSection from '../components/Sliding'
-import WindowsSection from '../components/windows'
-import AluminProf from '../components/aluminprof'
+import WindowsSection from '../components/Windows'
+import AluminProf from '../components/Aluminprof'
 import Footer from '../components/footer'
+import GoogleMap from '../components/GoogleMap'
+import Contacts from '../components/Contacts'
+import CookieBanner from '../components/Cookiibanner'
 
 export default function Home() {
   return (
     <>
- <Head>
-  <title>Металопластикові вікна, двері, балкони | [Назва компанії]</title>
-  <meta
-    name="description"
-    content="Купуйте вікна, двері, балкони з установкою. Швидкий монтаж. Гарантія. Безкоштовна консультація."
-  />
-  <meta
-    name="keywords"
-    content="вікна, металопластикові вікна, двері, балкони, розсувні системи, вікна Дніпро, вікна з установкою, замовити вікна"
-  />
+    <CookieBanner/>
+<Head>
+      <title>Металопластикові вікна, двері, балкони | ViknoCity</title>
+      <link rel="icon" href="/favicon.png" />
+      <meta
+        name="description"
+        content="Металопластикові вікна, двері, балкони з установкою. Працюємо у Києві, Дніпрі, Кривому Розі, Миколаєві, Одесі, Запоріжжі, Черкасах та Харкові. Швидкий монтаж, гарантія, безкоштовна консультація."
+      />
+      <meta
+        name="keywords"
+        content="вікна Київ, вікна Дніпро, вікна Кривий Ріг, вікна Миколаїв, вікна Одеса, вікна Запоріжжя, вікна Черкаси, вікна Харків, металопластикові двері, скління балконів, ViknoCity, розсувні системи, установка вікон"
+      />
 
-  {/* Open Graph */}
-  <meta property="og:title" content="Металопластикові вікна, двері, балкони | [Назва компанії]" />
-  <meta property="og:description" content="Якісні вікна та двері з монтажем під ключ. Працюємо по Дніпру та області. Гарантія. Знижки на балкони та розсувні системи." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://твої-сайт.ua" />
-  <meta property="og:image" content="https://твої-сайт.ua/og-image.jpg" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Вікна під ключ" />
-</Head>
+      {/* Open Graph */}
+      <meta property="og:title" content="ViknoCity — металопластикові вікна та двері в Україні" />
+      <meta
+        property="og:description"
+        content="Компанія ViknoCity встановлює якісні металопластикові вікна, двері та балкони з гарантією у 8 містах України. Безкоштовна консультація та знижки на розсувні системи."
+      />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://viknocity.com.ua" />
+      <meta property="og:image" content="https://viknocity.com.ua/og-image.jpg" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image:alt" content="Вікна, двері, балкони від ViknoCity в Україні" />
+
+      <meta httpEquiv="Content-Language" content="uk" />
+    </Head>
 
       <Header />
       <Banner />
@@ -43,16 +52,17 @@ export default function Home() {
       <BalconySection id="#balconies" />
       <SlidingSystemsSection id="#sliding-systems"/>
       <AluminProf id="alumin" />
+      <Contacts id="contacts"/>
 </main>
-<div className="fixed bottom-4 right-4 z-50 block md:hidden">
+<div className="fixed bottom-7 right-7 z-50 block md:hidden">
   <a
     href="tel:+380970000000"
     className="bg-green-600 hover:bg-green-700 text-white rounded-full p-3 shadow-lg flex items-center justify-center transition-colors duration-200"
     aria-label="Подзвонити"
   >
-    <svg
+ <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="h-6 w-6"
+      className="h-7 w-7"
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
@@ -66,7 +76,6 @@ export default function Home() {
     </svg>
   </a>
 </div>
-
 
 <Footer />
     </>

@@ -30,38 +30,7 @@ export default function Button() {
       </button>
 
       <Modal isOpen={open} onClose={() => setOpen(false)}>
-        <h2 className="text-2xl font-bold mb-4">Залишити заявку</h2>
-        {sent ? (
-          <p className="text-green-600">Дякуємо! Ми зв’яжемося з вами найближчим часом.</p>
-        ) : (
-          <form onSubmit={handleSubmit} className="space-y-4">
-            <input
-              name="name"
-              type="text"
-              placeholder="Ваше ім’я"
-              value={form.name}
-              onChange={handleChange}
-              required
-              className="w-full border p-2 rounded"
-            />
-            <input
-              name="phone"
-              type="tel"
-              placeholder="Телефон"
-              value={form.phone}
-              onChange={handleChange}
-              required
-              className="w-full border p-2 rounded"
-            />
-            <button
-              type="submit"
-              className="bg-blue-600 text-white px-4 py-2 rounded"
-            >
-              Надіслати
-            </button>
-          </form>
-        )}
-      </Modal>
+              </Modal>
     </>
   )
 }

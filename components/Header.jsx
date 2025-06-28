@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { useState } from 'react'
 
 export default function Header() {
@@ -6,7 +7,11 @@ export default function Header() {
   return (
     <header className="bg-white shadow py-4 px-6 sticky top-0 z-50">
       <nav className="max-w-7xl mx-auto flex items-center justify-between">
-        <div className="text-xl font-bold text-blue-700">ВікнаКомфорт</div>
+        <div className="w-32">
+          <Link href="/" scroll={true}>
+  <img src="/logo.jpg" alt="ViknoCity" className="w-full h-auto cursor-pointer" />
+</Link>
+</div>
         
         {/* Кнопка для мобільного меню */}
         <div className="md:hidden">
@@ -22,13 +27,14 @@ export default function Header() {
         </div>
 
         {/* Меню для desktop */}
-        <ul className="hidden md:flex space-x-6 text-sm text-gray-800 font-medium">
+        <ul className="hidden md:flex space-x-6 text-lg text-blue-900 font-medium">
           <li><a href="#windows" className="hover:text-blue-600">Вікна</a></li>
           <li><a href="#doors" className="hover:text-blue-600">Двері</a></li>
           <li><a href="#balconies" className="hover:text-blue-600">Балкони</a></li>
           <li><a href="#sliding-systems" className="hover:text-blue-600">Розсувні системи</a></li>
           <li><a href="#alumin" className="hover:text-blue-600">Алюмінієві конструкції</a></li>
-          <li><div className="hidden md:block text-blue-800 font-semibold">
+          <li><a href="#contacts" className="hover:text-blue-600">Контакти</a></li>
+          <li><div className="hidden md:block text-blue-900 font-semibold">
   <a href="tel:+380970000000" className="hover:underline">
     +38 (097) 000 00 00
   </a>
@@ -45,6 +51,12 @@ export default function Header() {
             <li><a href="#balconies" onClick={() => setIsOpen(false)}>Балкони</a></li>
             <li><a href="#sliding-systems" onClick={() => setIsOpen(false)}>Розсувні системи</a></li>
             <li><a href="#alumin" onClick={() => setIsOpen(false)}>Алюмінієві конструкції</a></li>
+                      <li><a href="#contacts" className="hover:text-blue-600">Контакти</a></li>
+          <li><div className="hidden md:block text-blue-900 font-semibold">
+  <a href="tel:+380970000000" className="hover:underline">
+    +38 (097) 000 00 00
+  </a>
+</div></li>
           </ul>
         </div>
       )}

@@ -31,25 +31,35 @@ export default function Banner() {
 
   return (
     <section className="relative h-[500px] md:h-[650px] w-full overflow-hidden">
+
+      {/* Слайди */}
       {slides.map((slide, index) => (
         <div
           key={index}
           className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-            index === current ? 'opacity-100 z-10' : 'opacity-0 z-0'
+            index === current ? 'opacity-100 z-0' : 'opacity-0 z-0'
           }`}
           style={{
             backgroundImage: `url(${slide.image})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
-        >
-          <div className="h-full w-full bg-black bg-opacity-50 flex flex-col items-center justify-center text-center px-4">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">{slide.title}</h2>
-            <p className="text-white text-lg md:text-xl mb-6">{slide.subtitle}</p>
-            <Button />
-          </div>
-        </div>
+        />
       ))}
+
+      {/* Напівпрозорий фон + тексти */}
+      <div className="absolute inset-0 bg-black bg-opacity-50 z-10 flex flex-col items-center justify-center text-center px-4">
+        <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          {slides[current].title}
+        </h2>
+        <p className="text-white text-lg md:text-xl mb-6">
+          {slides[current].subtitle}
+        </p>
+
+        {/* Кнопка — одна, не оновлюється */}
+        <Button />
+      </div>
+
     </section>
   )
 }

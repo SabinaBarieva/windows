@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.viknocity.com.ua/sitemap.xml
+Host: https://www.viknocity.com.ua

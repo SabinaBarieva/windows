@@ -1,1 +1,6 @@
-(()=>{var r={};r.id=636,r.ids=[636],r.modules={2768:()=>{},5280:(r,e,s)=>{"use strict";s.r(e),s.d(e,{default:()=>u});var t=s(8732);function u({Component:r,pageProps:e}){return(0,t.jsx)(r,{...e})}s(2768)},8732:r=>{"use strict";r.exports=require("react/jsx-runtime")}};var e=require("../webpack-runtime.js");e.C(r);var s=e(e.s=5280);module.exports=s})();
+"use strict";(()=>{var e={};e.id=636,e.ids=[636],e.modules={361:e=>{e.exports=require("next/dist/compiled/next-server/pages.runtime.prod.js")},2015:e=>{e.exports=require("react")},2326:e=>{e.exports=require("react-dom")},3885:(e,r,t)=>{e.exports=t(361)},5280:(e,r,t)=>{t.r(r),t.d(r,{default:()=>i});var s=t(8732),a=t(9788),n=t.n(a);t(8379);let i=function({Component:e,pageProps:r}){return(0,s.jsxs)(s.Fragment,{children:[(0,s.jsxs)(n(),{children:[(0,s.jsx)("script",{async:!0,src:"https://www.googletagmanager.com/gtag/js?id=G-RTX72HPYM6"}),(0,s.jsx)("script",{dangerouslySetInnerHTML:{__html:`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-RTX72HPYM6');
+            `}})]}),(0,s.jsx)(e,{...r})]})}},7020:(e,r)=>{r._=function(e){return e&&e.__esModule?e:{default:e}}},8732:e=>{e.exports=require("react/jsx-runtime")}};var r=require("../webpack-runtime.js");r.C(e);var t=e=>r(r.s=e),s=r.X(0,[952],()=>t(5280));module.exports=s})();

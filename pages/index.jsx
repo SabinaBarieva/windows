@@ -45,6 +45,8 @@ export default function Home() {
       <meta httpEquiv="Content-Language" content="uk" />
     </Head>
 
+    
+
       <Header />
       <Banner />
       <main className="bg-gray-100">

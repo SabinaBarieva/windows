@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import InputMask from 'react-input-mask'
+import { event, conversion } from '../lib/gtag';
 
 export default function Modal({ isOpen, onClose }) {
   const [name, setName] = useState('')
@@ -33,6 +34,15 @@ export default function Modal({ isOpen, onClose }) {
         setError('')
         setName('')
         setPhone('')
+        // Google Analytics: событие отправки формы
+event({
+  action: 'form_submit',
+  category: 'Lead',
+  label: 'Modal Form',
+});
+
+// Google Ads: конверсия
+conversion('AW-17306131771/T7EOCJzx-O8aELu6mrxA'); // ← замените на свой send_to
       } else {
         setError('Помилка надсилання. Спробуйте ще раз.')
       }

@@ -12,12 +12,13 @@ export default function AluminProf() {
     {
       brand: 'KMD',
       country: 'Україна',
-      image: '/images/profiles/kmd.jpg',
+      image: '/images/profiles/kmd.webr',
       description: 'KMD — український бренд алюмінієвих профілів, відомий простотою монтажу та міцністю. Часто використовується у торгових центрах, офісах та промислових обʼєктах.',
       series: [
         {
           name: 'KMD 45',
-          image: '/images/series/kmd-45.jpg',
+          image: '/images/series/kmd-45.webr',
+          alt: 'Алюминевый профиль',
           specs: {
             depth: 45,
             glazing: 'до 24 мм',
@@ -32,12 +33,13 @@ export default function AluminProf() {
     {
       brand: 'Aluprof',
       country: 'Польща',
-      image: '/images/profiles/aluprof.jpg',
+      image: '/images/profiles/aluprof.webr',
+      alt: 'Алюминевый профиль',
       description: 'Aluprof — один з провідних європейських виробників алюмінієвих систем. Пропонує широкий спектр рішень для житлового та комерційного будівництва.',
       series: [
         {
           name: 'Aluprof MB-70',
-          image: '/images/series/aluprof-mb70.jpg',
+          image: '/images/series/aluprof-mb70.webr',
           specs: {
             depth: 70,
             glazing: 'до 50 мм',
@@ -52,12 +54,12 @@ export default function AluminProf() {
     {
       brand: "Reiner's",
       country: 'Німеччина',
-      image: '/images/profiles/reiners.jpg',
+      image: '/images/profiles/reiners.webr',
       description: "Reiner's — німецький бренд преміум-рівня з акцентом на дизайн і теплоізоляцію. Ідеальний вибір для сучасних скляних фасадів і панорамних вікон.",
       series: [
         {
           name: "Reiner's 86",
-          image: '/images/series/reiners-86.jpg',
+          image: '/images/series/reiners-86.webr',
           specs: {
             depth: 86,
             glazing: 'до 60 мм',
@@ -81,7 +83,7 @@ export default function AluminProf() {
         <div className="flex flex-col md:flex-row gap-8 mb-10 items-center">
           <div className="w-full md:w-1/2">
             <Image
-              src="/alumin.jpg"
+              src="/alumin.webr"
               alt="Алюмінієві конструкції"
               width={600}
               height={400}

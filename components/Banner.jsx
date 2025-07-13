@@ -3,17 +3,17 @@ import { useState, useEffect } from 'react'
 
 const slides = [
   {
-    image: '/banner1.jpg',
+    image: '/banner1.webr',
     title: 'Сучасні металопластикові вікна',
     subtitle: 'Енергоефективність та шумоізоляція для вашого дому',
   },
   {
-    image: '/banner2.jpg',
+    image: '/banner2.webr',
     title: 'Якісні двері для будь-якого інтер’єру',
     subtitle: 'Надійність, стиль і комфорт',
   },
   {
-    image: '/banner3.jpg',
+    image: '/banner3.webr',
     title: 'Балконні та розсувні системи',
     subtitle: 'Максимум простору і світла',
   },

@@ -12,7 +12,7 @@ export default function Doors() {
         <div className="flex flex-col md:flex-row gap-8 mb-10 items-center">
           <div className="w-full md:w-1/2">
             <Image
-              src="/doors.jpg"
+              src="/doors.webr"
               alt="Металопластикові вхідні двері"
               width={600}
               height={400}

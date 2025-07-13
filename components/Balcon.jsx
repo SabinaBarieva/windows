@@ -12,7 +12,7 @@ export default function BalconySection() {
         <div className="flex flex-col md:flex-row gap-8 mb-10 items-center">
           <div className="w-full md:w-1/2">
             <Image
-              src="/balcon.jpg"
+              src="/balcon.webr"
               alt="Металопластиковий балкон"
               width={600}
               height={400}

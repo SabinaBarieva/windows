@@ -10,12 +10,12 @@ export default function WindowsSection() {
     {
       brand: 'ВікнаНові',
       country: 'Україна',
-      description: 'Вітчизняний виробник із гнучкими рішеннями для різних потреб. Пропонує широкий вибір профілів для будь-якого бюджету. Системи бренду ідеально підходять як для новобудов, так і для реконструкцій старих будинків. ВікнаНові орієнтовані на практичність, функціональність та естетику.',
+      description: 'ВікнаНові — це поєднання сучасних технологій, надійної фурнітури, якісного профілю та доступної ціни. Компанія зарекомендувала себе як один з лідерів серед українських виробників вікон, орієнтуючись на енергоефективність, довговічність та сервіс високого рівня.Вітчизняний виробник із гнучкими рішеннями для різних потреб. Пропонує широкий вибір профілів для будь-якого бюджету. Системи бренду ідеально підходять як для новобудов, так і для реконструкцій старих будинків. ВікнаНові орієнтовані на практичність, функціональність та естетику.',
       series: [
         {
           name: 'ВікнаНові Classic',
           specs: {
-            image: '/profiles/wr400.jpg',
+            image: '/profiles/wr400.webr',
             camerasFrame: 4,
             camerasSash: 4,
             depth: 58,
@@ -31,7 +31,7 @@ export default function WindowsSection() {
         {
           name: 'ВікнаНові Pro',
           specs: {
-            image: '/profiles/wr500.jpg',
+            image: '/profiles/wr500.webr',
             camerasFrame: 6,
             camerasSash: 6,
             depth: 70,
@@ -49,12 +49,12 @@ export default function WindowsSection() {
  {
       brand: 'WDS',
       country: 'Україна',
-      description: 'WDS — український бренд металопластикових вікон, який поєднує сучасні технології виробництва та доступність. Профілі WDS широко використовуються в житловому та комерційному будівництві.',
+      description: 'WWDS — це український бренд металопластикових вікон, профільна система якого виготовляється на сучасному заводі за європейськими стандартами. Компанія вже понад 15 років забезпечує українців якісними та енергоефективними вікнами, що відповідають сучасним вимогам до комфорту та естетики.DS — український бренд металопластикових вікон, який поєднує сучасні технології виробництва та доступність. Профілі WDS широко використовуються в житловому та комерційному будівництві.',
       series: [
         {
           name: 'WDS 5S',
           specs: {
-            image: '/profiles/wds5s.jpg',
+            image: '/profiles/wds5s.webr',
             camerasFrame: 5,
             camerasSash: 5,
             depth: 60,
@@ -71,7 +71,7 @@ export default function WindowsSection() {
           name: 'WDS 6S',
           
           specs: {
-            image: '/profiles/wds6s.jpg',
+            image: '/profiles/wds6s.webr',
             camerasFrame: 6,
             camerasSash: 5,
             depth: 70,
@@ -87,7 +87,7 @@ export default function WindowsSection() {
         {
           name: 'WDS 76 AD',
           specs: {
-            image: '/profiles/wds76ad.jpg',
+            image: '/profiles/wds76ad.webr',
             camerasFrame: 6,
             camerasSash: 5,
             depth: 76,
@@ -103,7 +103,7 @@ export default function WindowsSection() {
         {
           name: 'WDS 76 MD',
           specs: {
-            image: '/profiles/wds76md.jpg',
+            image: '/profiles/wds76md.webr',
             camerasFrame: 6,
             camerasSash: 6,
             depth: 76,
@@ -121,13 +121,13 @@ export default function WindowsSection() {
     {
       brand: 'Rehau',
       country: 'Німеччина',
-      image: '/images/profiles/rehau.jpg',
-      description: 'Rehau — провідний європейський виробник ПВХ-профілів. Його системи славляться високими стандартами якості, довговічністю та інноваційними технологіями.',
+      image: '/images/profiles/rehau.webr',
+      description: 'Rehau — це німецький бренд, який вже понад 70 років асоціюється з надійністю, енергоефективністю та довговічністю. Пластикові вікна Rehau – ідеальне рішення для тих, хто цінує тепло, тишу та комфорт у домі.',
       series: [
         {
           name: 'Rehau Euro-Design 70',
           specs: {
-            image: '/profiles/rehau70.jpg',
+            image: '/profiles/rehau70.webr',
             camerasFrame: 5,
             camerasSash: 5,
             depth: 70,
@@ -143,7 +143,7 @@ export default function WindowsSection() {
         {
           name: 'Rehau Synego',
           specs: {
-            image: '/profiles/rehauSynego.jpg',
+            image: '/profiles/rehauSynego.webr',
             camerasFrame: 7,
             camerasSash: 6,
             depth: 80,
@@ -161,13 +161,12 @@ export default function WindowsSection() {
     {
   brand: 'Kömmerling',
   country: 'Німеччина',
-  image: '/images/profiles/kommerling.jpg',
-  description: 'Kömmerling — німецький бренд, відомий екологічними профілями без свинцю та високою якістю виготовлення. Часто використовується у проєктах преміум-класу.',
+  description: `Kömmerling — один із лідерів серед європейських виробників ПВХ-профілів преміум-класу. Вікна цього бренду об'єднують у собі інноваційні технології, естетику та енергоефективність, що робить їх ідеальними для сучасного житла.Kömmerling — німецький бренд, відомий екологічними профілями без свинцю та високою якістю виготовлення. Часто використовується у проєктах преміум-класу.`,
   series: [
     {
       name: 'Kömmerling 76 AD',
       specs: {
-        image: '/profiles/kommerling76ad.jpg',
+        image: '/profiles/kommerling76ad.webr',
         camerasFrame: 6,
         camerasSash: 5,
         depth: 76,
@@ -183,7 +182,7 @@ export default function WindowsSection() {
     {
       name: 'Kömmerling 76 MD',
       specs: {
-        image: '/profiles/kommerling76md.jpg',
+        image: '/profiles/kommerling76md.webr',
         camerasFrame: 6,
         camerasSash: 6,
         depth: 76,
@@ -200,7 +199,7 @@ export default function WindowsSection() {
       name: 'Kömmerling 70',
       
       specs: {
-        image: '/profiles/kommerling70.jpg',
+        image: '/profiles/kommerling70.webr',
         camerasFrame: 5,
         camerasSash: 5,
         depth: 70,
@@ -216,7 +215,7 @@ export default function WindowsSection() {
     {
       name: 'Kömmerling 88 MD',
       specs: {
-        image: '/profiles/kommerling88.jpg',
+        image: '/profiles/kommerling88.webr',
         camerasFrame: 7,
         camerasSash: 6,
         depth: 88,
@@ -246,7 +245,7 @@ return (
         <div className="flex flex-col md:flex-row gap-8 mb-10 items-center">
           <div className="w-full md:w-1/2">
             <Image
-              src="/window.jpg"
+              src="/window.webr"
               alt="Металопластикові вікна"
               width={600}
               height={400}

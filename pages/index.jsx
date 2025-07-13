@@ -17,6 +17,10 @@ export default function Home() {
     <>
     <CookieBanner/>
 <Head>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+
+
+
       <title>Металопластикові вікна, двері, балкони | ViknoCity</title>
       <link rel="icon" href="/favicon.png" />
       <meta
@@ -59,7 +63,7 @@ export default function Home() {
 </main>
 <div className="fixed bottom-7 right-7 z-50 block md:hidden">
   <a
-    href="tel:+380970000000"
+    href="tel:+380970123486"
     className="bg-green-600 hover:bg-green-700 text-white rounded-full p-3 shadow-lg flex items-center justify-center transition-colors duration-200"
     aria-label="Подзвонити"
   >

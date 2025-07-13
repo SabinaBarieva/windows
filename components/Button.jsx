@@ -48,7 +48,7 @@ export default function Button() {
             name="name"
             value={form.name}
             onChange={handleChange}
-            placeholder="Имя"
+            placeholder="Ім'я"
           />
           <input
             name="phone"
@@ -56,7 +56,7 @@ export default function Button() {
             onChange={handleChange}
             placeholder="Телефон"
           />
-          <button type="submit">Отправить</button>
+          <button type="submit">Відправити</button>
         </form>
       </Modal>
     </>

@@ -35,8 +35,8 @@ export default function Header() {
           <li><a href="#alumin" className="hover:text-blue-600">Алюмінієві конструкції</a></li>
           <li><a href="#contacts" className="hover:text-blue-600">Контакти</a></li>
           <li><div className="hidden md:block text-blue-900 font-semibold">
-  <a href="tel:+380970000000" className="hover:underline">
-    +38 (097) 000 00 00
+  <a href="tel:+380970123486" className="hover:underline">
+    +38 097 012 34 86
   </a>
 </div></li>
         </ul>
@@ -53,8 +53,8 @@ export default function Header() {
             <li><a href="#alumin" onClick={() => setIsOpen(false)}>Алюмінієві конструкції</a></li>
                       <li><a href="#contacts" className="hover:text-blue-600">Контакти</a></li>
           <li><div className="hidden md:block text-blue-900 font-semibold">
-  <a href="tel:+380970000000" className="hover:underline">
-    +38 (097) 000 00 00
+  <a href="tel:+380970123486" className="hover:underline">
+    +38 097 012 34 86
   </a>
 </div></li>
           </ul>

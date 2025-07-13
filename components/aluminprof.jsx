@@ -90,11 +90,12 @@ export default function AluminProf() {
               className="rounded-lg shadow"
             />
           </div>
-          <div className="w-full md:w-1/2">
-            <p className="text-lg text-gray-700 mb-6">
-              Алюмінієві конструкції — це сучасне архітектурне рішення для фасадів, вітражів, вхідних груп, перегородок та терас. Вони вирізняються надійністю, легкістю монтажу та широкими дизайнерськими можливостями.
-            </p>
-          </div>
+<div className="w-full md:w-1/2">
+  <p className="text-lg text-gray-700 mb-6">
+    <strong>Алюмінієві конструкції</strong> — це сучасне та ефективне архітектурне рішення для <strong>офісів, приватних будинків, комерційних приміщень і фасадів</strong>. Вони ідеально підходять для створення <strong>скляних фасадів, вітражних систем, вхідних груп, перегородок, зимових садів та терас</strong>. Завдяки своїм властивостям, <strong>алюмінієві системи</strong> забезпечують <strong>високу міцність, легкість монтажу, стійкість до корозії</strong> та широкий вибір дизайнерських рішень.
+  </p>
+</div>
+
         </div>
 
         {aluminumProfiles.map((profile) => (
@@ -102,7 +103,7 @@ export default function AluminProf() {
             <h3 className="text-2xl font-semibold text-blue-700 mb-2">
               {profile.brand} ({profile.country})
             </h3>
-            <p className="text-gray-700 mb-4 text-base leading-relaxed">
+            <p className="text-gray-700 text-lg  mb-4 leading-relaxed">
               {profile.description}
             </p>
 
@@ -159,9 +160,10 @@ exit={{ opacity: 0, x: 100 }}
           </div>
         ))}
 
-        <p className="text-lg text-gray-800 font-medium mb-6">
-          Залиште заявку — ми допоможемо підібрати алюмінієві конструкції під ваші потреби та забезпечимо якісний монтаж.
-        </p>
+        <p class="text-lg text-gray-800 font-medium mb-6">
+  <strong>Залиште заявку на безкоштовну консультацію</strong> — ми допоможемо підібрати <strong>алюмінієві конструкції</strong> під ваші потреби: <strong>фасади, перегородки, вітражі, тераси</strong>, і забезпечимо <strong>професійний монтаж з гарантією якості</strong>.
+</p>
+
 
         <div className="text-center">
           <Button />

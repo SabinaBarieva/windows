@@ -8,7 +8,7 @@ export default function Footer() {
         <a href="/policy" className="text-sm text-gray-500 underline">Політика конфіденційності</a>
 
         <p className="text-gray-500 text-sm mt-1">
-          м. Дніпро | Тел: +38 (097) 000-00-00 | Email: viknocity@gmail.com
+          м. Дніпро | Тел: +38 (097) 012 34 86 | Email: viknocity@gmail.com
         </p>
       </div>
     </footer>

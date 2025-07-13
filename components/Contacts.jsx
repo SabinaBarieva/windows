@@ -20,7 +20,7 @@ export default function Contacts() {
     </div>
 
     <div className="text-lg text-gray-700">
-      📞 <a href="tel:+380970000000">+380970000000</a>
+      📞 <a href="tel:+380970123486">+380970123486</a>
     </div>
 
     <div className="text-lg text-gray-700">

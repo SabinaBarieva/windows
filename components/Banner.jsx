@@ -4,20 +4,20 @@ import { useState, useEffect } from 'react'
 const slides = [
   {
     image: '/banner1.webr',
-    title: 'Сучасні металопластикові вікна',
-    subtitle: 'Енергоефективність та шумоізоляція для вашого дому',
+    title: 'Металопластикові вікна — тепло, тиша та економія для вашого дому',
+    subtitle: 'Встановлення енергоефективних ПВХ-вікон з багатокамерним профілем і сучасними склопакетами. Покращена шумоізоляція, зниження витрат на опалення та стильний зовнішній вигляд для будь-якого типу приміщення.',
   },
   {
     image: '/banner2.webr',
-    title: 'Якісні двері для будь-якого інтер’єру',
-    subtitle: 'Надійність, стиль і комфорт',
+    title: 'Надійні металопластикові двері — комфорт і безпека кожного дня',
+    subtitle: 'Вхідні та міжкімнатні двері з армованим ПВХ-профілем, протизламною фурнітурою та якісною герметизацією. Великий вибір дизайну, скління та кольору. Ідеальне рішення для дому, офісу чи магазину.',
   },
   {
     image: '/banner3.webr',
-    title: 'Балконні та розсувні системи',
-    subtitle: 'Максимум простору і світла',
+    title: 'Балконні і розсувні системи — більше світла та простору',
+    subtitle: 'Розсувні ПВХ-системи, скління балконів і лоджій з максимальним панорамним оглядом. Простота у використанні, економія простору, естетичність та теплоізоляція. Монтаж під ключ з гарантією.',
   },
-]
+];
 
 export default function Banner() {
   const [current, setCurrent] = useState(0)
@@ -48,17 +48,17 @@ export default function Banner() {
       ))}
 
       {/* Напівпрозорий фон + тексти */}
-      <div className="absolute inset-0 bg-black bg-opacity-50 z-10 flex flex-col items-center justify-center text-center px-4">
-        <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-          {slides[current].title}
-        </h2>
-        <p className="text-white text-lg md:text-xl mb-6">
-          {slides[current].subtitle}
-        </p>
+<div className="absolute inset-0 bg-black bg-opacity-50 z-10 flex flex-col items-center justify-center text-center px-4 sm:px-6 md:px-10 py-8">
+  <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white mb-4">
+    {slides[current].title}
+  </h2>
+  <p className="text-sm sm:text-base md:text-lg text-white mb-6 max-w-2xl">
+    {slides[current].subtitle}
+  </p>
 
-        {/* Кнопка — одна, не оновлюється */}
-        <Button />
-      </div>
+  <Button />
+</div>
+
 
     </section>
   )

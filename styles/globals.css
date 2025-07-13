@@ -4,3 +4,6 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+  @apply font-sans text-gray-800 bg-white;
+}

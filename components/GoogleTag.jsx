@@ -3,18 +3,12 @@ import Script from 'next/script';
 
 const GoogleTag = () => (
   <>
-    {/* Google Analytics */}
-    <Script
-      strategy="afterInteractive"
-      src="https://www.googletagmanager.com/gtag/js?id=G-RTX72HPYM6"
-    />
-    
-    {/* Google Ads */}
+    {/* Google Tag base script */}
     <Script
       strategy="afterInteractive"
       src="https://www.googletagmanager.com/gtag/js?id=AW-17306131771"
     />
-
+    
     <Script
       id="google-tags"
       strategy="afterInteractive"

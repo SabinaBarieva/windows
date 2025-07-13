@@ -42,7 +42,7 @@ event({
 });
 
 // Google Ads: конверсия
-conversion('AW-17306131771/T7EOCJzx-O8aELu6mrxA'); // ← замените на свой send_to
+conversion('AW-17306131771/-UkkCKHw3-kaELu6mrxA'); // ← замените на свой send_to
       } else {
         setError('Помилка надсилання. Спробуйте ще раз.')
       }

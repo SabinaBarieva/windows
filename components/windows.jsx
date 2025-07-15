@@ -15,7 +15,7 @@ export default function WindowsSection() {
         {
           name: 'ВікнаНові Classic',
           specs: {
-            image: '/profiles/wr400.webr',
+            image: '/profiles/wr400.webp',
             camerasFrame: 4,
             camerasSash: 4,
             depth: 58,
@@ -31,7 +31,7 @@ export default function WindowsSection() {
         {
           name: 'ВікнаНові Pro',
           specs: {
-            image: '/profiles/wr500.webr',
+            image: '/profiles/wr500.webp',
             camerasFrame: 6,
             camerasSash: 6,
             depth: 70,
@@ -54,7 +54,7 @@ export default function WindowsSection() {
         {
           name: 'WDS 5S',
           specs: {
-            image: '/profiles/wds5s.webr',
+            image: '/profiles/wds5s.webp',
             camerasFrame: 5,
             camerasSash: 5,
             depth: 60,
@@ -71,7 +71,7 @@ export default function WindowsSection() {
           name: 'WDS 6S',
           
           specs: {
-            image: '/profiles/wds6s.webr',
+            image: '/profiles/wds6s.webp',
             camerasFrame: 6,
             camerasSash: 5,
             depth: 70,
@@ -87,7 +87,7 @@ export default function WindowsSection() {
         {
           name: 'WDS 76 AD',
           specs: {
-            image: '/profiles/wds76ad.webr',
+            image: '/profiles/wds76ad.webp',
             camerasFrame: 6,
             camerasSash: 5,
             depth: 76,
@@ -103,7 +103,7 @@ export default function WindowsSection() {
         {
           name: 'WDS 76 MD',
           specs: {
-            image: '/profiles/wds76md.webr',
+            image: '/profiles/wds76md.webp',
             camerasFrame: 6,
             camerasSash: 6,
             depth: 76,
@@ -121,13 +121,13 @@ export default function WindowsSection() {
     {
       brand: 'Rehau',
       country: 'Німеччина',
-      image: '/images/profiles/rehau.webr',
+      image: '/images/profiles/rehau.webp',
       description: 'Rehau — це німецький бренд, який вже понад 70 років асоціюється з надійністю, енергоефективністю та довговічністю. Пластикові вікна Rehau – ідеальне рішення для тих, хто цінує тепло, тишу та комфорт у домі.',
       series: [
         {
           name: 'Rehau Euro-Design 70',
           specs: {
-            image: '/profiles/rehau70.webr',
+            image: '/profiles/rehau70.webp',
             camerasFrame: 5,
             camerasSash: 5,
             depth: 70,
@@ -143,7 +143,7 @@ export default function WindowsSection() {
         {
           name: 'Rehau Synego',
           specs: {
-            image: '/profiles/rehauSynego.webr',
+            image: '/profiles/rehauSynego.webp',
             camerasFrame: 7,
             camerasSash: 6,
             depth: 80,
@@ -166,7 +166,7 @@ export default function WindowsSection() {
     {
       name: 'Kömmerling 76 AD',
       specs: {
-        image: '/profiles/kommerling76ad.webr',
+        image: '/profiles/kommerling76ad.webp',
         camerasFrame: 6,
         camerasSash: 5,
         depth: 76,
@@ -182,7 +182,7 @@ export default function WindowsSection() {
     {
       name: 'Kömmerling 76 MD',
       specs: {
-        image: '/profiles/kommerling76md.webr',
+        image: '/profiles/kommerling76md.webp',
         camerasFrame: 6,
         camerasSash: 6,
         depth: 76,
@@ -199,7 +199,7 @@ export default function WindowsSection() {
       name: 'Kömmerling 70',
       
       specs: {
-        image: '/profiles/kommerling70.webr',
+        image: '/profiles/kommerling70.webp',
         camerasFrame: 5,
         camerasSash: 5,
         depth: 70,
@@ -215,7 +215,7 @@ export default function WindowsSection() {
     {
       name: 'Kömmerling 88 MD',
       specs: {
-        image: '/profiles/kommerling88.webr',
+        image: '/profiles/kommerling88.webp',
         camerasFrame: 7,
         camerasSash: 6,
         depth: 88,
@@ -245,7 +245,7 @@ return (
         <div className="flex flex-col md:flex-row gap-8 mb-10 items-center">
           <div className="w-full md:w-1/2">
             <Image
-              src="/window.webr"
+              src="/window.webp"
               alt="Металопластикові вікна"
               width={600}
               height={400}

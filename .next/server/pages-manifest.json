@@ -1,7 +1,7 @@
 {
-  "/api/send": "pages/api/send.js",
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
+  "/api/send": "pages/api/send.js",
   "/_document": "pages/_document.js",
   "/": "pages/index.html",
   "/policy": "pages/policy.html",

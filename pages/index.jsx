@@ -11,10 +11,19 @@ import Footer from '../components/footer'
 import GoogleMap from '../components/GoogleMap'
 import Contacts from '../components/Contacts'
 import CookieBanner from '../components/Cookiibanner'
+import PromoModal from '../components/Prommodal'
+import React, { useState, useEffect } from 'react'
 
 export default function Home() {
+    const [showPromo, setShowPromo] = useState(false)
+
+  useEffect(() => {
+    const timer = setTimeout(() => setShowPromo(true), 5000) // показать через 5 сек
+    return () => clearTimeout(timer)
+  }, [])
   return (
     <>
+    <PromoModal isOpen={showPromo} onClose={() => setShowPromo(false)} />
     <CookieBanner/>
 <Head>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />

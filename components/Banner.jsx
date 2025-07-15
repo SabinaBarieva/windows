@@ -1,5 +1,6 @@
 import Button from "./Button"
 import { useState, useEffect } from 'react'
+import Image from "next/image";
 
 const slides = [
   {
@@ -55,6 +56,20 @@ export default function Banner() {
   <p className="text-sm sm:text-base md:text-lg text-white mb-6 max-w-2xl">
     {slides[current].subtitle}
   </p>
+
+<div className="bg-white/80 text-gray-900 rounded-xl p-3 m-4 flex items-center gap-3 shadow-md backdrop-blur-sm w-full max-w-2xl mx-auto">
+  <Image
+    src="/e.webr"
+    alt="єВідновлення"
+    width={120}
+    height={36}
+    className="w-28 sm:w-36 md:w-44 h-auto shrink-0"
+  />
+  <p className="text-sm md:text-base font-medium leading-tight">
+    Ми працюємо за програмою <span className="text-blue-800 font-semibold">єВідновлення</span> — оплату можна здійснити онлайн 💳
+  </p>
+</div>
+
 
   <Button />
 </div>

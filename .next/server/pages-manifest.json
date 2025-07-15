@@ -1,9 +1,9 @@
 {
+  "/_error": "pages/_error.js",
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
-  "/_error": "pages/_error.js",
   "/api/send": "pages/api/send.js",
-  "/policy": "pages/policy.html",
   "/": "pages/index.html",
+  "/policy": "pages/policy.html",
   "/404": "pages/404.html"
 }

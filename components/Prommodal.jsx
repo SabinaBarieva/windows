@@ -4,6 +4,7 @@ import { event, conversion } from '../lib/gtag'
 
 export default function PromoModal({ isOpen, onClose }) {
   const [phone, setPhone] = useState('')
+  const [name, setName] = useState('')
   const [error, setError] = useState('')
   const [success, setSuccess] = useState(false)
 
@@ -25,7 +26,7 @@ export default function PromoModal({ isOpen, onClose }) {
       const res = await fetch('/api/send', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name: 'Акційна форма', phone }),
+        body: JSON.stringify({ name, phone }),
       })
 
       if (res.ok) {
@@ -53,8 +54,10 @@ export default function PromoModal({ isOpen, onClose }) {
   if (!isOpen) return null
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-40 z-50 flex items-center justify-center px-4">
-      <div className="bg-white rounded-lg shadow-lg max-w-md w-full p-6 relative animate-fade-in-scale">
+    <div className="fixed inset-0 bg-black pt-20  bg-opacity-40 z-50 flex items-center justify-center px-4">
+      <div className="bg-white rounded-lg shadow-lg w-full max-w-sm p-4 relative animate-fade-in-scale">
+
+
         <button
           onClick={onClose}
           className="absolute top-2 right-3 text-gray-500 hover:text-black text-2xl"
@@ -65,13 +68,35 @@ export default function PromoModal({ isOpen, onClose }) {
         {!success && (
           <h2 className="text-xl font-bold text-center mb-4">🎁 Отримай знижку 20%</h2>
         )}
-
+{!success && (
+         <>
+        <div className="text-center mb-4">
+          <img
+            src="/sale.webp"
+            alt="Вікно"
+            className="w-full max-w-[180px] sm:max-w-[220px] mx-auto rounded shadow-md"
+          />
+          <p className="text-base sm:text-lg font-semibold mt-2 text-gray-800">
+            Металопластикове вікно<br />
+            від <span className="text-blue-700 font-bold">2200₴</span>
+          </p>
+        </div>
+        </>
+)}
         {success ? (
           <p className="text-green-600 text-center font-medium">
             ✅ Дякуємо! Ми скоро з вами зв’яжемось.
           </p>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-3">
+             <input
+              type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              placeholder="Ваше ім’я"
+              className="w-full p-2 border rounded"
+              required
+            />
             <InputMask
               mask="+380 (99) 999 99 99"
               value={phone}
